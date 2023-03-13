@@ -1,0 +1,381 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /*========== Color =========== */
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-nav-bg: #98A2B3;
+    --clr-nav-bg-variant: hsla(218, 15%, 65%, 0.15);
+    --clr-parag: #364152;
+    --clr-red: #CC0000;
+
+
+
+
+    /*========== Device Width =========== */
+    --container-width-lg: 80%;
+    --container-width-md: 88%;
+    --container-width-sm: 92%;
+
+
+    /*========== Transition =========== */
+    --transition: all 350ms ease;
+
+}
+
+    /*================= General settings ===========*/
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    section{
+        padding: 5rem 0;
+    }
+
+    .container{
+        margin: 0 auto;
+        width:var(--container-width-lg) ;
+    }
+
+    img{
+        width: 100%;
+        display: block;
+        object-fit: cover
+    }
+
+    .btn{
+        height: 44px;
+        width: 94px;
+        left: 95px;
+        border-radius: 8px;
+        padding: 10px 18px;
+        background-color: #cc0000;
+
+    }
+
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.7rem;
+    }
+
+    h4{
+        font-size: 1.875rem;
+    }
+
+    h5{
+        font-size: 1rem;
+    }
+
+    h6{
+        font-size: 0.89rem;
+    }
+
+    p{
+        font-size: 1rem;
+        /* color: var(--clr-parag); */
+    }
+
+    a{
+        color: var(--clr-white);
+    }
+
+    body{
+        background-color: var(--clr-white) ;
+        overflow-x: hidden ;
+        line-height: 1.4;
+        font-family: 'Mulish', sans-serif ;
+        min-height: 100vh;
+        color: var(--clr-white);
+        /* max-width: 1920px; */
+
+
+    }
+
+
+    /*================= Header ===========*/
+    header{
+        background: url('./assets/header-bg.jpg');
+        height: 110vh;
+
+    }
+
+
+    /*================= Nav ===========*/
+    nav{
+        width: 100vw;
+        height: 5rem;
+        background-color: var(--clr-nav-bg-variant);
+        display: grid;
+        place-items: center;
+    }
+
+    .nav__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__menu{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        width: 219px;
+        height: 32px;
+    }
+
+    .nav__left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav__sign{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .logo{
+        height: 64px;
+        width: 102px;
+        left: 245px;
+    }
+
+    /*================= Hero ===========*/
+
+    #hero{
+        color: var(--clr-white);
+        position: relative;
+        display: grid;
+        place-items: center;
+        padding: 14em 0 2rem;
+    }
+
+    .hero__header{
+        margin-bottom: 7rem;
+    }
+
+    .hero__content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* position: absolute; */
+        bottom: -20rem;
+    }
+
+    .service{
+        padding: 2rem;
+        background-color: var(--clr-white);
+        box-shadow: 0 0 1px var(--clr-parag);
+
+    }
+
+    .service__header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .service__header h4{
+        color: var(--clr-red);
+    }
+
+
+    .service p{
+        margin: 2rem 0;
+        color: var(--clr-parag);
+    }
+
+    .service a{
+        display: flex;
+        gap: 1rem;
+        color: var(--clr-parag);
+    }
+
+    .service:nth-child(1) a{
+        margin-top: 3.5rem;
+    }
+
+    .service a >img{
+        width: 14px;
+    }
+
+
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*================= Footer  ===========*/
+
+
+
+
+
+
+
+    /*================= Media Query (Tablets) ===========*/
+    @media screen and (max-width: 64em){
+
+        .container{
+            width: var(--container-width-md) ;
+
+        }
+
+        h1{
+            font-size: 2.2rem;
+        }
+    
+        h2{
+            font-size: 1.8rem;
+        }
+    
+        h3{
+            font-size: 1.5rem;
+        }
+    
+        h4{
+            font-size: 1.1rem;
+        }
+    
+        h5{
+            font-size: 0.9rem;
+        }
+    
+        h6{
+            font-size: 0.8rem;
+        }
+    
+        p{
+            font-size: 0.85rem;
+        }
+
+
+
+    /*================= Nav ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*================= Footer  ===========*/
+
+
+    }
+
+
+
+
+    /*================= Media Query (Small Devices) ===========*/
+    @media screen and (max-width: 37em){
+
+        .container{
+            width: var(--container-width-sm);
+
+        }
+
+    
+        h1{
+            font-size: 2rem;
+        }
+    
+        h2{
+            font-size: 1.7rem;
+        }
+    
+        h3{
+            font-size: 1.5rem;
+        }
+    
+        h4{
+            font-size: 1rem;
+        }
+    
+        h5{
+            font-size: 0.85rem;
+        }
+    
+        h6{
+            font-size: 0.8rem;
+        }
+    
+        p{
+            font-size: 0.85rem;
+        }
+
+
+
+
+    /*================= Nav ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*=================  ===========*/
+
+
+
+    /*================= Footer  ===========*/
+
+
+    }
+
+
+
+

@@ -66,19 +66,22 @@
 
 
     h1{
-        font-size: 3rem;
+        font-size: 3.75rem;
+        /* font-weight: 900; */
+
     }
 
     h2{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     h3{
-        font-size: 1.7rem;
+        font-size: 2.5rem;
     }
 
     h4{
         font-size: 1.875rem;
+        font-weight: bolder;
     }
 
     h5{
@@ -142,6 +145,16 @@
         height: 32px;
     }
 
+    .nav__menu a{
+        transition: var(--transition);
+        font-weight: bolder;
+    }
+
+    .nav__menu a:hover{
+        color: var(--clr-red);
+
+    }
+
     .nav__left{
         display: flex;
         justify-content: space-between;
@@ -199,6 +212,7 @@
 
     .service__header h4{
         color: var(--clr-red);
+        font-weight: 1000;
     }
 
 

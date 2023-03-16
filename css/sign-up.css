@@ -1,0 +1,133 @@
+
+
+.sign-up{
+    background: url('../assets/signup-header-bg1.png');
+    background-repeat: no-repeat; 
+    height: 150vh;
+}    
+
+#sign-up{
+    border-bottom: 1px solid #D0D5DD;
+    position: absolute;
+    height: 4rem;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #D0D5DD;
+    backdrop-filter: blur(2px);
+}
+
+.sign-up__container{
+    justify-content: flex-end;
+    
+}
+
+#hero{
+    position: relative;
+    
+}
+
+.login__content{
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    bottom: 5rem;
+
+}
+
+.login__header{
+    margin-bottom: 2rem;
+}
+
+.login__header h4{
+    font-size: 36px;
+}
+
+.login__header p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.login__main{
+    background-color: var(--clr-white);
+    padding: 1.5rem;
+}
+
+.login__main form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login__main-header{
+    margin-bottom: 2rem;
+}
+
+
+.login__main h5{
+    color: #202939;
+}
+
+.label label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+    padding-bottom: 0.5rem;
+}
+
+form input{
+    padding: 10px 14px;
+    gap: 8px;
+    width: 394px;
+    height: 44px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+form .forget{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #CC0000;
+    width: fit-content;
+    padding: 2rem 0 1rem;
+}
+
+.siginup-login{
+    padding: 10px 18px;
+    gap: 8px;
+    width: 394px;
+    height: 44px;
+    background: #CC0000;
+    border: 1px solid #CC0000;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-family: inherit;
+    color: var(--clr-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    transition: var(--transition);
+    cursor: pointer;
+
+}
+
+.siginup-login:hover{
+    background-color: #cc0000ce;
+}
+
+header{
+    margin-bottom: 0;
+}
+
+
+
+

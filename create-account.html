@@ -87,14 +87,14 @@
 
                 <div class="main__content-right">
                     <div class="steps__header">
-                        <h6>Corporate account details</h6>
+                        <h6 class="active">Corporate account details</h6>
                         <h6>OTP Verification</h6>
                         <h6>Create your Credentials</h6>
                     </div>
 
                     <div class="main__body">
 
-                        <article class="step step-1 active">
+                        <article class="step step-1">
                             <h5>Enter your corporate account details</h5>
 
                             <form action="">
@@ -105,7 +105,9 @@
                                         <span class="err">This field is required</span>
                                     </div>
 
-                                    <input type="text" name="Country" id="country" required>
+                                    <select name="Country" id="country">
+
+                                    </select>
 
                                 </div>
 
@@ -169,11 +171,11 @@
                                 <div class="acc-num">
 
                                     <div class="label">
-                                        <label for="acc-num">Enter Your Account Number</label>
+                                        <label for="acc-num-2">Enter Your Account Number</label>
                                         <span class="err">This field is required</span>
                                     </div>
 
-                                    <input type="text" name="Account Number" id="acc-num" required placeholder="ex Aderemi Abiodun Joseph" maxlength="10">
+                                    <input type="text" name="Account Number" id="acc-num-2" required placeholder="ex Aderemi Abiodun Joseph" maxlength="10">
 
                                 </div>
 
@@ -221,7 +223,18 @@
 
                         </article>
 
+                        <!-- <article class="step step-4">
+                            <h6>UBA Smart Self Service</h6>
 
+                            <span>
+
+                            </span>
+                            <h5>
+                                Your account has been created successfully 
+                            </h5>
+
+                            <a href="http://login.html">Login</a>
+                        </article> -->
                     </div>
                 </div>
             </main>
@@ -229,6 +242,17 @@
         </div>
 
     </section>
+
+    <!-- <footer>
+        <div class="container footer__container">
+            <p>
+                &copy; 2021 UBA Group. All Right Reserved.
+            </p>
+        </div>
+    </footer> -->
+
+
+    <script src="./script.js"></script>
 
 
     

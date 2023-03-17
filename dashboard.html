@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--============== Favicon =============-->
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon"> 
+
+    <!--============== Font(Mulish) =============-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+    <!--============== CDN (Icon Scout)=============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/dashboard.css">
+
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="dashboard" >
+
+        <!--============== Navbar =============-->
+        <nav id="dashboard">
+
+            <div class = "container nav__container dashboard__container">
+
+                <h5>UBA Smart Self Services</h5>
+
+                <div class="dashboard__header-left">
+                    <div class="avatar">
+                        <img src="./assets/Avatar.png" alt="customer avatar">
+                    </div>
+
+                    <div class="logo" >
+                        <img src="./assets/Logo.png" alt="Uba logo">
+                    </div>
+
+                </div>
+
+            </div>    
+
+        </nav>
+
+        <main id="main" class="container main__container main__dashboard">
+
+            <div class="main__top">
+
+                <div class="main__header">
+                    <div class="main__header-left">
+                        <h4>My Dashboard</h4>
+                        <p>See your loan activities at a glance</p>
+    
+                    </div>
+    
+                    <div class="main__header-right">
+
+                        <div class="apply__loan">
+                            <a href="">
+                                <span>
+                                    <i class="uil uil-plus"></i>
+                                </span>
+                                <span>Apply for a Loan</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="loan__stat">
+
+                <article>
+                    <div class="stat__logo">
+                        <img src="./assets/pending-loan.png" alt="pending-loan icon">
+                    </div>
+                    <h6>Pending Loan Requests</h6>
+                    <h5>0</h5>
+                </article>
+                
+
+                <article>
+                    <div class="stat__logo">
+                        <img src="./assets/review__loan.png" alt="review-loan icon">
+                    </div>
+                    <h6>Loan Requests Under Review</h6>
+                    <h5>3</h5>
+                </article>
+
+                <article>
+                    <div class="stat__logo">
+                        <img src="./assets/approved__loan.png" alt="approved-loan icon">
+                    </div>
+                    <h6>Approved Loan Requests</h6>
+                    <h5>13</h5>
+                </article>
+
+            </div>
+
+
+            <!---=========== Charts =============-->
+            <div class="chart-overview">
+
+                <div class="chartjs">
+
+                    <canvas id="chart"></canvas>
+
+                </div>
+
+                <!-- <div class="chartjs">
+
+                    <div id="chartApex">
+                        <div id="timeline-chart"></div>
+                    </div>
+
+                </div> -->
+
+                <div class="overview">
+                    <div class="overview__header">
+                        <h6>Overview</h6>
+                        <span>
+                            <i class="uil uil-question-circle"></i>
+                        </span>
+                    </div>
+
+                    <div class="over__main">
+
+                    </div>
+
+                    <div class="overview__info">
+                        <div class="total">
+                            <p>Total Loan Requests</p>
+                            <h5>20</h5>
+                        </div>
+                        <div class="verified">
+                            <p>Verified Loan Requests</p>
+                            <h5>3</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--======== Table ===========-->
+            <div class="loan__table">
+                <div class="table__header">
+                    <h5>My Loans</h5>
+
+                    <div class="search-filter">
+                        <div class="search">
+                            <span class="search__icon">
+                                <i class="uil uil-search"></i>
+                            </span>
+
+                            <input type="text" placeholder="Search">
+                        </div>
+
+                        <div class="filter">
+                            <span class="filter__icon">
+                                <i class="uil uil-filter"></i>
+                            </span>
+
+                            <select name="" id="">
+                                <option value="Date">Date</option>
+                                <option value="Email">Email</option>
+                                <option value="Loan Status">Loan Status</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Application ID</th>
+                            <th>Applicant Name</th>
+                            <th>Email</th>
+                            <th>BVN</th>
+                            <th>Loan Status</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CORPLOAN1234</td>
+                            <td>Nkem Donald Okwuone</td>
+                            <td>seniorman@gmail.com</td>
+                            <td>1234567890</td>
+                            <td>Pending</td>
+                            <td>
+                                <span>
+                                    <i class="uil uil-ellipsis-v"></i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CORPLOAN1234</td>
+                            <td>Nkem Donald Okwuone</td>
+                            <td>seniorman@gmail.com</td>
+                            <td>1234567890</td>
+                            <td>Pending</td>
+                            <td>
+                                <span>
+                                    <i class="uil uil-ellipsis-v"></i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CORPLOAN1234</td>
+                            <td>Nkem Donald Okwuone</td>
+                            <td>seniorman@gmail.com</td>
+                            <td>1234567890</td>
+                            <td>Pending</td>
+                            <td>
+                                <span>
+                                    <i class="uil uil-ellipsis-v"></i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CORPLOAN1234</td>
+                            <td>Nkem Donald Okwuone</td>
+                            <td>seniorman@gmail.com</td>
+                            <td>1234567890</td>
+                            <td>Pending</td>
+                            <td>
+                                <span>
+                                    <i class="uil uil-ellipsis-v"></i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CORPLOAN1234</td>
+                            <td>Nkem Donald Okwuone</td>
+                            <td>seniorman@gmail.com</td>
+                            <td>1234567890</td>
+                            <td>Pending</td>
+                            <td>
+                                <span>
+                                    <i class="uil uil-ellipsis-v"></i>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                  
+                </table>
+
+                <div class="table__controls">
+                    <button class="prev__loan-p">
+                        <span>
+                            <i class="uil uil-arrow-left"></i>
+                        </span>
+                        Previous
+                    </button>
+    
+                    <div class="pagination">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                    </div>
+    
+                    <button class="next__loan-p">
+                        <span>
+                            <i class="uil uil-arrow-right"></i>
+                        </span>
+                        Next
+                    </button>
+                </div>
+            </div>
+
+            
+
+
+            
+
+        </main>     
+ 
+
+    </div>
+
+    <!-- <footer>
+        <div class="container footer__container">
+            <p>
+                &copy; 2021 UBA Group. All Right Reserved.
+            </p>
+        </div>
+    </footer> -->
+
+
+    <!--=============== Apex Chart CDN ============-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+
+    <!--=============== Chartjs CDN ============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/chart.js"></script>
+    
+</body>
+</html>

@@ -13,25 +13,31 @@ new Chart(chart, {
             {
                 label: 'Total Applications',
                 data: [ 6, 10, 12, 8, 2, 8, 7, 14, 16, 20, 35],
-                backgroundColor: 'blue',
-                borderWidth: 2
+                // backgroundColor: 'blue',
+                borderWidth: 2,
+
+                fill: {
+                    target: 'origin',
+                    // above: 'red',
+                    // below: 'blue'  
+                }
             },
 
             {
                 label: 'Approved Loans',
                 data: [ 5, 8, 7, 6, 2, 6, 7, 13, 14, 18, 30],
-                borderColor: '#9AA3B2',
-                borderWidth: 2
+                // borderColor: '#9AA3B2',
+                borderWidth: 2,
+
+                fill: {
+                    target: 'origin',
+                    // above: 'green',
+                    // below: 'orange'  
+                }
             },
 
-        //     {
-        //         fill: {
-        //             target: 'origin',
-        //             above: 'rgb(255, 0, 0)',
-        //             below: 'rgb(0, 0, 255)'  
-        //         }
-        //     }    
-        // ]
+    
+        ]
 
 
     },

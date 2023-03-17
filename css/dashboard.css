@@ -1,30 +1,4 @@
 
-:root{
-    --clr-gray-50: #EAECF0;
-    --clr-gray-100: #F2F4F7;
-    --clr-gray-200: #EAECF0;
-    --clr-gray-300: #D0D5DD;
-    --clr-gray-400: #98A2B3;
-    --clr-gray-500: #667085;
-    --clr-gray-700: #344054;
-    --clr-gray-800: #1D2939;
-    --clr-gray-900: #101828;
-    --clr-primary-50: #F8FAFC;
-    --clr-primary-400: #9AA3B2;
-    --clr-primary-600: #CC0000;
-    --clr-primary-700: #364152;
-    --clr-red-logo: #ED1500;
-    --clr-success-50: #ECFDF3;
-    --clr-success-500: #12B76A;
-    --clr-success-700: #027A48;
-    --clr-warning-50: #FFFAEB;
-    --clr-warning-500: #F79009;
-    --clr-warning-700: #B54708;
-    --clr-error-50: #FEF3F2;
-    --clr-error-700: #B42318;
-    --clr-linerar-gradent: linear-gradient( #7F56D9, rgba(127, 86, 217, 0.1) ) ;
-    /* --clr-linerar-gradent: ; */
-}
 
 .dashboard{
     background: linear-gradient(var(--clr-gray-200), rgba(127, 86, 217, 0.1));

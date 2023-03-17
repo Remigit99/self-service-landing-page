@@ -1,0 +1,24 @@
+
+
+
+
+.Loan-app{
+    background: linear-gradient(var(--clr-gray-200), rgba(127, 86, 217, 0.1));
+    
+}
+
+#Loan-app{
+    background-color: var(--clr-white);
+}
+
+.loan-app__header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.loan-app__container h5{
+    color: var(--clr-primary-700);
+    /* font-size: 1rem; */
+}

@@ -92,73 +92,59 @@
                         <h6>Create your Credentials</h6>
                     </div>
 
-                    <div class="main__body">
+                    <form>
 
-                        <article class="step step-1">
+                        <article class="step step-1 show">
                             <h5>Enter your corporate account details</h5>
 
-                            <form action="">
-
-                                <div class="country">
-                                    <div class="label">
-                                        <label for="country">Select your Country</label>
-                                        <span class="err">This field is required</span>
-                                    </div>
-
-                                    <select name="Country" id="country">
-
-                                    </select>
-
+                            <div class="form-group">
+                                <div class="label">
+                                    <label for="country">Select your Country</label>
+                                    <span class="err">This field is required</span>
                                 </div>
 
-                                <div class="acc-num">
-                                    <div class="label">
-                                        <label for="acc-num">Enter Your Account Number</label>
-                                        <span class="err">This field is required</span>
-                                    </div>
+                                <select name="Country" id="country">
 
-                                    <input type="text" name="Account Number" id="acc-num" required placeholder="ex 0123456789" maxlength="10">
+                                </select>
 
+                            </div>
+
+                            <div class="form-group">
+                                <div class="label">
+                                    <label for="acc-num">Enter Your Account Number</label>
+                                    <span class="err">This field is required</span>
                                 </div>
 
-                                <div class="acc__btns">
-                                    <button class="cancel">Cancel</button>
-                                    <button class="next" type="submit">Next</button>
-                                </div>
+                                <input type="text" name="Account Number" id="acc-num" required placeholder="ex 0123456789" maxlength="10">
 
+                            </div>
 
-                            </form>
-
-                    
+                            <div class="acc__btns">
+                                <button type="button" class="cancel">Cancel</button>
+                                <button class="next" type="button">Next</button>
+                            </div>
 
                         </article>
 
                         
                         <article class="step step-2">
-                            <h5>Please enter the OTP that was sent to your number ending with <span class="number__ending">
-                                ...8765
-                            </span></h5>
+                            <h5>
+                                Please enter the 6-digit code we sent to your phone number ending in <span class="number-ending">...8765</span> or email address at <span class="email-address">...8765</span>. 
+                                
+                            </h5>
 
-                            <form action="">
-
-                                <div class="otp">
-                                    <div class="label">
-                                        <label for="OTP">OTP</label>
-                                        <span class="err">This field is required</span>
-                                    </div>
-
-                                    <input type="text" name="OTP" id="otp" placeholder="Enter Code" required>
-
+                            <div class="form-group">
+                                <div class="label">
+                                    <label for="OTP">OTP</label>
+                                    <span class="err">This field is required</span>
                                 </div>
 
-                                <div class="acc__btns">
-                                    <button class="back">Back</button>
-                                    <button class="next" type="submit">Next</button>
-                                </div>
+                                <input type="text" name="OTP" id="otp" placeholder="Enter Code" required>
+                            </div>
 
-
-                            </form>
-
+                            <div class="acc__btns">
+                                <button class="prev" type="button">Back</button>
+                                <button class="next" type="button">Next</button>
                             </div>
 
                         </article>
@@ -166,60 +152,52 @@
                         <article class="step step-3">
                             <h5>Create your Login Credentials</h5>
 
-                            <form action="">
-
-                                <div class="acc-num">
-
-                                    <div class="label">
-                                        <label for="acc-num-2">Enter Your Account Number</label>
-                                        <span class="err">This field is required</span>
-                                    </div>
-
-                                    <input type="text" name="Account Number" id="acc-num-2" required placeholder="ex Aderemi Abiodun Joseph" maxlength="10">
-
+                            <div class="form-group">
+                                <div class="label">
+                                    <label for="acc-num-2">Enter Your Account Number</label>
+                                    <span class="err">This field is required</span>
                                 </div>
 
-                                <div class="email">
-                                    <div class="label">
-                                        <label for="Email">Email</label>
-                                        <span class="err">This field is required</span>
-                                    </div>
-
-                                    <input type="email" name="Email" id="Email" required placeholder="ex aderemibiodun@gmail.com">
-
-                                </div>
-
-                                <div class="password">
-                                    <div class="label">
-                                        <label for="Password">Create a Password</label>
-                                        <span class="err">This field is required</span>
-                                    </div>
-
-                                    <input type="password" name="Password" id="Password" required placeholder="Enter Password">
-
-                                </div>
-
-                                <div class="Confirmpassword">
-                                    <div class="label">
-                                        <label for="Confirm Password">Confrim Password</label>
-                                        <span class="err">This field is required</span>
-                                    </div>
-
-                                    <input type="password" name="Confirm Password" id="Confirm Password" required placeholder="Enter Password">
-
-                                </div>
-
-                               
-
-                                <div class="acc__btns">
-                                    <button class="cancel">Cancel</button>
-                                    <button class="next" type="submit">Next</button>
-                                </div>
-
-
-                            </form>
+                                <input type="text" name="Account Number" id="acc-num-2" required placeholder="ex Aderemi Abiodun Joseph" maxlength="10">
 
                             </div>
+
+                            <div class="form-group">
+                                <div class="label">
+                                    <label for="Email">Email</label>
+                                    <span class="err">This field is required</span>
+                                </div>
+
+                                <input type="email" name="Email" id="Email" required placeholder="ex aderemibiodun@gmail.com">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="label">
+                                    <label for="Password">Create a Password</label>
+                                    <span class="err">This field is required</span>
+                                </div>
+
+                                <input type="password" name="Password" id="Password" required placeholder="Enter Password">
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="label">
+                                    <label for="Confirm Password">Confrim Password</label>
+                                    <span class="err">This field is required</span>
+                                </div>
+
+                                <input type="password" name="Confirm Password" id="Confirm Password" required placeholder="Enter Password">
+
+                            </div>
+
+                            <div class="acc__btns">
+                                <button type = 'button' class="prev">Back</button>
+                                <button class="next" type="submit">Next</button>
+                            </div>
+
+                        
 
                         </article>
 
@@ -235,7 +213,9 @@
 
                             <a href="http://login.html">Login</a>
                         </article> -->
-                    </div>
+                    </form>
+                        
+    
                 </div>
             </main>
 
@@ -252,7 +232,7 @@
     </footer> -->
 
 
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 
 
     

@@ -29,17 +29,32 @@ const cancelBtn = document.querySelector('.cancel');
 const prevBtn = document.querySelectorAll('.prev');
 const form = document.querySelector('form');
 
+
+const headerBar = Array.from(document.querySelectorAll('.steps__header h6'));
+
+
+let currentBar = 1;
+
+
 // console.log(steps, nextBtn, prevBtn);
 
-nextBtn.forEach(button =>{ button.addEventListener('click', (e) => {
-    changeStep('next')
+prevBtn.forEach(button =>{ button.addEventListener('click', (e) => {
+    changeStep('prev');
+
+    headerBar[currentBar].classList.remove('active');
+    currentBar--;
     })
 })
 
-prevBtn.forEach(button =>{ button.addEventListener('click', (e) => {
-    changeStep('prev')
+nextBtn.forEach(button =>{ button.addEventListener('click', (e) => {
+    changeStep('next');
+
+    headerBar[currentBar].classList.add('active');
+    currentBar++;
     })
 })
+
+
 
 
 function changeStep(btn){
@@ -56,6 +71,19 @@ function changeStep(btn){
     steps[index].classList.add('show');
 
 }
+
+// const validationForm = () =>{
+//         let valid = true;
+//         for(let i = 0; i < formInputs.length; i++ ){
+//             if(!formInputs[i].value){
+//                 valid = false;
+//             }else{
+//                 valid = true;
+//             }
+//         }
+    
+//         return valid;
+// }
 
 // const headerBar = Array.from(document.querySelectorAll('.steps__header h6'));
 

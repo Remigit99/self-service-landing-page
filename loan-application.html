@@ -47,130 +47,292 @@
 
         </nav>
 
-        <main id="main" class="container main__container main__dashboard">
+		<h4 class="container lhead">
+			New Loan Application
+		</h4>
 
+
+        <main id="main" class="container main__container">
 
             <form action="">
-            	<div id="wizard">
-            		<!-- SECTION 1 -->
-	                <h4></h4>
-	                <section>
-	                    <div class="form-row form-group">
-	                    	<div class="form-holder">
-	                    		<label for="Full Name">
-	                    		Full Name *
-		                    	</label>
-	                    		<input type="text" placeholder="Aderemi Abiodun James" required class="form-control">
-	                    	</div>
-	                    </div>
 
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Account Number *
-	                    	</label>
-	                    	<input type="text" required placeholder="ex 0123456789"   class="form-control">
-	                    </div>
+				<div class="steps__header">
 
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Branch Name *
-	                    	</label>
-	                    	<input type="text" required placeholder="Head Office"   class="form-control">
-	                    </div>	
+					<h6 class="active">Customer Information</h6>
+					<h6>Loan Information</h6>
+					<h6>Financial Statements</h6>
+					<h6>Collateral Information</h6>
+					<h6>Application Review</h6>
 
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Country *
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="Country" id="country" class="form-control">
-									
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
+				</div>
+            	
+				<!--======= Step 1 ===========-->
 
-	                    <!-- <div class="form-row">
-	                    	<label for="">
-	                    		Address *
-	                    	</label>
-	                    	<input type="text" class="form-control" placeholder="Street address" style="margin-bottom: 20px">
-	                    	<input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
-	                    </div>	 -->
+				<article class="step step-1 show">
+					<div class="form-row form-group">
+						<div class="form-holder">
+							<label for="Full Name">
+							Full Name *
+							</label>
+							<input type="text" placeholder="Aderemi Abiodun James" required class="form-control">
+						</div>
+					</div>
 
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Tax Identification Number (TIN)
-	                    	</label>
-	                    	<input type="text" placeholder="ex 0123456789"class="form-control">
-	                    </div>
+					<div class="form-row">
+						<label for="">
+							Account Number *
+						</label>
+						<input type="text" required placeholder="ex 0123456789"   class="form-control">
+					</div>
 
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		BVN *
-	                    	</label>
-	                    	<input type="text" required placeholder="ex 0123456789" class="form-control">
-	                    </div>
+					<div class="form-row">
+						<label for="">
+							Branch Name *
+						</label>
+						<input type="text" required placeholder="Head Office"   class="form-control">
+					</div>	
 
-                        <div class="form-row">
-	                    	<label for="">
-	                    		Legal Status *
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-									<option value="viet nam" class="option">Viet Nam</option>
-									<option value="united states" class="option">United States</option>
-									<option value="united kingdom" class="option">United Kingdom</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>
+					<div class="form-row">
+						<label for="">
+							Country *
+						</label>
+						<div class="form-holder">
+							<select name="Country" id="country" class="form-control">
+								
+							</select>
+							
+						</div>
+					</div>	
 
-                        <div class="form-row">
-	                    	<label for="">
-	                    		Company Size *
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-									<option value="viet nam" class="option">Viet Nam</option>
-									<option value="united states" class="option">United States</option>
-									<option value="united kingdom" class="option">United Kingdom</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>
+					<div class="form-row">
+						<label for="">
+							Tax Identification Number (TIN)
+						</label>
+						<input type="text" placeholder="ex 0123456789"class="form-control">
+					</div>
 
-                        <div class="form-row">
-	                    	<label for="">
-	                    		Economic Sector*
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-									<option value="viet nam" class="option">Viet Nam</option>
-									<option value="united states" class="option">United States</option>
-									<option value="united kingdom" class="option">United Kingdom</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>
+					<div class="form-row">
+						<label for="">
+							BVN *
+						</label>
+						<input type="text" required placeholder="ex 0123456789" class="form-control">
+					</div>
 
-                        <div class="form-row">
-	                    	<label for="">
-	                    		Industry Sub Sector *
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-									<option value="viet nam" class="option">Viet Nam</option>
-									<option value="united states" class="option">United States</option>
-									<option value="united kingdom" class="option">United Kingdom</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>
+					<div class="form-row">
+						<label for="">
+							Legal Status *
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="viet nam" class="option">Viet Nam</option>
+								<option value="united states" class="option">United States</option>
+								<option value="united kingdom" class="option">United Kingdom</option>
+							</select>
+							
+						</div>
+					</div>
 
-	                </section>
+					<div class="form-row">
+						<label for="">
+							Company Size *
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="viet nam" class="option">Viet Nam</option>
+								<option value="united states" class="option">United States</option>
+								<option value="united kingdom" class="option">United Kingdom</option>
+							</select>
+							
+						</div>
+					</div>
 
-                </div>
+					<div class="form-row">
+						<label for="">
+							Economic Sector*
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="viet nam" class="option">Viet Nam</option>
+								<option value="united states" class="option">United States</option>
+								<option value="united kingdom" class="option">United Kingdom</option>
+							</select>
+							
+						</div>
+					</div>
+
+					<div class="form-row">
+						<label for="">
+							Industry Sub Sector *
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="viet nam" class="option">Viet Nam</option>
+								<option value="united states" class="option">United States</option>
+								<option value="united kingdom" class="option">United Kingdom</option>
+							</select>
+							
+						</div>
+					</div>
+
+					<div class="acc__btns">
+						<button class="prev" type="button">Back</button>
+						<button class="next" type="button">Next</button>
+					</div>
+
+				</article>
+
+				<!--======= Step 2 ===========-->
+
+				<article class="step step-2">
+
+					<div class="step2__header">
+						<h5>Add One or more loan facilities to this application</h5>
+						<p>
+							Loan facilities that you add will be displayed here.
+						</p>
+					</div>
+
+					<div class="step2__main">
+
+						<div>
+							<span>
+								<i class="uil uil-info-circle"></i>
+							</span>
+						</div>
+
+						<h5>
+							Nothing to show
+						</h5>
+
+						<p>
+							You have not added any loan facilities yet
+						</p>
+
+						<div id="upload">
+
+							<input type="file" id="file-upload"  required />
+							  <label for="file-upload">
+								<span>
+									<i class="uil uil-plus"></i>
+								</span>
+								Add a New Facility
+							</label>
+							<div id="file-upload-filename"></div>
+
+						</div>
+
+					</div>
+
+					<div class="acc__btns">
+						<button class="prev" type="button">Back</button>
+						<button class="next" type="button">Next</button>
+					</div>
+					
+				</article>
+
+				<!--======= Step 3 ===========-->
+				<article class="step step-3">
+
+					<div class="step3__header">
+						<h5>Upload your financial statements for the past 3 years if available</h5>
+						<p>
+							Financial Statements that you add will be displayed here.
+						</p>
+					</div>
+
+					<div class="step3__main">
+
+						<div>
+							<span>
+								<i class="uil uil-info-circle"></i>
+							</span>
+						</div>
+
+						<h5>
+							Nothing to show
+						</h5>
+
+						<p>
+							You have not added any Financial Statements yet
+						</p>
+
+
+						<div id="upload">
+
+							<input type="file" id="file-upload"  required />
+							  <label for="file-upload">
+								<span>
+									<i class="uil uil-plus"></i>
+								</span>
+								Add a Financial Statement
+							</label>
+							<div id="file-upload-filename"></div>
+
+						</div>
+
+
+
+					</div>
+
+					<div class="acc__btns">
+						<button class="prev" type="button">Back</button>
+						<button class="next" type="button">Next</button>
+					</div>
+					
+				</article>
+
+				<!--======= Step 4 ===========-->
+
+				<article class="step step-4">
+
+					<div class="step4__header">
+						<h5>Upload Collateral</h5>
+						<p>
+							Collateral that you add will be displayed here.
+						</p>
+					</div>
+
+					<div class="step4__main">
+
+						<div>
+							<span>
+								<i class="uil uil-info-circle"></i>
+							</span>
+						</div>
+
+						<h5>
+							Nothing to show
+						</h5>
+
+						<p>
+							You have not added any loan collateral yet
+						</p>
+
+						<div id="upload">
+
+							<input type="file" id="file-upload"  required />
+							  <label for="file-upload">
+								<span>
+									<i class="uil uil-plus"></i>
+								</span>
+								New Collateral
+							</label>
+							<div id="file-upload-filename"></div>
+
+						</div>
+
+					</div>
+
+					<div class="acc__btns">
+						<button class="prev" type="button">Back</button>
+						<button class="next" type="button">Next</button>
+					</div>
+					
+				</article>
+
+
+
+                
                 
             </form>    
 

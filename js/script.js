@@ -72,6 +72,25 @@ function changeStep(btn){
 
 }
 
+
+// Upload Files Under Loan Application
+
+let input = document.getElementById( 'file-upload' );
+let infoArea = document.getElementById( 'file-upload-filename' );
+
+input.addEventListener( 'change', showFileName );
+
+function showFileName( event ) {
+  
+  // the change event gives us the input it occurred in 
+  let input = event.srcElement;
+  
+ 
+  let fileName = input.files[0].name;
+  
+  infoArea.textContent = 'File name: ' + fileName;
+}
+
 // const validationForm = () =>{
 //         let valid = true;
 //         for(let i = 0; i < formInputs.length; i++ ){

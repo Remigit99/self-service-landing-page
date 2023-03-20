@@ -91,6 +91,73 @@ function showFileName( event ) {
   infoArea.textContent = 'File name: ' + fileName;
 }
 
+
+// Modal Pop-up
+
+const popCancel = document.querySelector('.remove-pop');
+const openModal = document.querySelector('.open-modal');
+const Modal = document.querySelector('.modal')
+const modalTop = document.querySelector('.modal-top');
+
+openModal.addEventListener('click', (e) =>{
+    e.preventDefault;
+    Modal.classList.remove('hidden');
+    modalTop.classList.add('filter');
+
+
+} )
+
+popCancel.addEventListener('click', (e) =>{
+    e.preventDefault;
+    Modal.classList.add('hidden')
+
+} )
+
+
+// Drag and Drop Functionality
+
+
+document.addEventListener('DOMContentLoaded', initUpload);
+
+const initUpload = () =>{
+
+    const prevent = (e) => e.preventDefault();
+
+    const dragArea = document.querySelector('.drag-drop');
+
+    const turnActive = () =>{
+        dragArea.classList.add('turn-active');
+    }
+
+    const turnInActive = () =>{
+        dragArea.classList.remove('turn-active');
+    }
+
+
+
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach((eName) =>{
+        eName.addEventListener('eName', prevent);
+    })
+
+    ['dragenter', 'dragover'].forEach((eName) => {
+        eName.addEventListener('eName', turnActive )
+    })
+
+    ['dragleave', 'drop'].forEach((eName) => {
+        eName.addEventListener('eName', turnActive )
+    })
+
+   
+
+
+
+}
+
+
+
+
+
+
 // const validationForm = () =>{
 //         let valid = true;
 //         for(let i = 0; i < formInputs.length; i++ ){

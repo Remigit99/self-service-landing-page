@@ -231,47 +231,101 @@
 				</article>
 
 				<!--======= Step 3 ===========-->
-				<article class="step step-3">
+				<article class="step step-3 ">
 
-					<div class="step3__header">
-						<h5>Upload your financial statements for the past 3 years if available</h5>
-						<p>
-							Financial Statements that you add will be displayed here.
-						</p>
+					<div class="modal-top">
+
+						<div class="step3__header">
+							<h5>Upload your financial statements for the past 3 years if available</h5>
+							<p>
+								Financial Statements that you add will be displayed here.
+							</p>
+						</div>
+	
+						<div class="step3__main">
+	
+							<div>
+								<span>
+									<i class="uil uil-info-circle"></i>
+								</span>
+							</div>
+	
+							<h5>
+								Nothing to show
+							</h5>
+	
+							<p>
+								You have not added any Financial Statements yet
+							</p>
+	
+	
+							<div id="upload">
+
+								<button type="button" class="open-modal">
+									<span>
+										<i class="uil uil-plus"></i>
+									</span>
+									Add a Financial Statement
+								</label>
+								</button>
+	
+								<!-- <input type="file" id="file-upload"  required />
+								  <label for="file-upload">
+									
+								<div id="file-upload-filename"></div> -->
+	
+							</div>
+						</div>	
+	
+
 					</div>
 
-					<div class="step3__main">
 
-						<div>
-							<span>
-								<i class="uil uil-info-circle"></i>
+					<div class="modal pop-up hidden">
+						<div class="pop-up-header">
+							<h6>Add a Financial Statement</h6>
+							<span class="remove-pop">
+								<i class="uil uil-multiply"></i>
 							</span>
 						</div>
 
-						<h5>
-							Nothing to show
-						</h5>
+						<div id="drag-drop">
 
-						<p>
-							You have not added any Financial Statements yet
-						</p>
+							<span>
+								<i class="uil uil-cloud-upload"></i>
+							</span>
 
+							<p><b>Click to Upload</b> or drag and drop</p>
+							<p>PNG, JPG or PDF (Max: 800 x 400px)</p>
+						</div>
 
-						<div id="upload">
+						<div id="file-upload-filename">
+							<span>
+								<p>File <span></span> was added</p>
 
-							<input type="file" id="file-upload"  required />
-							  <label for="file-upload">
-								<span>
-									<i class="uil uil-plus"></i>
-								</span>
-								Add a Financial Statement
-							</label>
-							<div id="file-upload-filename"></div>
-
+							</span>
+							<h6 class="remove-files">Remove</h6>
 						</div>
 
 
+						<div class="pop-up-btn">
+							<button class="pop-cancel remove-pop" type="button">Cancel</button>
 
+
+							<div id="upload">
+
+								<input type="file" id="file-upload"  required />
+								  <label for="file-upload">
+									<!-- <span>
+										<i class="uil uil-plus"></i>
+									</span> -->
+									Attach Files
+								</label>
+	
+							</div>
+
+							<!-- <button class="pop-attach" type="button">Al</button> -->
+						</div>
 					</div>
 
 					<div class="acc__btns">

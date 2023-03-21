@@ -290,3 +290,64 @@ input[type="file"] {
 /* .step-2{
     display: none;
 } */
+
+/*=========== Collateral Modal =========*/
+
+.col-select select{
+    width: 100%;
+}
+
+
+/*=========== Facility Modal =========*/
+.modal-facility{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 1rem;
+    gap: 32px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    /* box-shadow: 0 0 5px var(--clr-gray-400); */
+    width: 780px;
+    /* height: 298px; */
+    box-shadow: 0 0 10px var(--clr-gray-400);
+    opacity: 1;
+    transition: var(--transition);
+
+
+}
+
+.product-info, .amount-currency, .tenor{
+    display: flex;
+    justify-content: space-between;
+} 
+
+/* .product-type{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.product-left, .amount-left, .tenor-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-left select, .amount-left select, .tenor-left select{
+    width: 100%;
+}
+
+.amount-left input, .tenor-left input{
+    width: 100%;
+}
+
+.step-2{
+    height: 110vh;
+}
+
+
+

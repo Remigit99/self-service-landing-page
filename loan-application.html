@@ -223,6 +223,118 @@
 
 					</div>
 
+					<!--========  New Facility Modal ===========-->
+					<div class="modal pop-up modal-facility">
+						<div class="pop-up-header">
+							<div class="pop-up-header-left">
+								<h6>Add a New Loan Facility</h6>
+								<p>All fields are mandatory.</p>
+							</div>
+							
+							<span class="remove-pop">
+								<i class="uil uil-multiply"></i>
+							</span>
+						</div>
+
+						<div class="product-info">
+							<h5>Select Proposed Collateral Type</h5>
+
+							<div class="product-left">
+
+								<div class="product-type">
+									<p>Product Type</p>
+									<select name="" id="">
+										<option value="select one">Select One</option>
+										<option value="select two">Select Two</option>
+										<option value="select three">Select Three</option>
+									</select>
+								</div>
+								<div class="product-type">
+									<p>Product</p>
+									<select name="" id="">
+										<option value="select one">Select One</option>
+										<option value="select two">Select Two</option>
+										<option value="select three">Select Three</option>
+									</select>
+								</div>
+
+							</div>
+
+							
+							
+						</div>
+
+						<div class="amount-currency">
+							<h5>Amount & Currency</h5>
+
+							<div class="amount-left">
+
+								<div class="product-type">
+									<p>Currency</p>
+									<select name="" id="">
+										<option value="select one">Naira</option>
+										<option value="select two">Select Two</option>
+										<option value="select three">Select Three</option>
+									</select>
+								</div>
+								<div class="product-type">
+									<p>Amount</p>
+									<input type="text" placeholder="Enter an Amount" required id="Amount">
+								</div>
+
+							</div>
+
+							
+							
+						</div>
+
+						<div class="tenor">
+							<h5>Tenor Information</h5>
+
+							<div class="tenor-left">
+
+								<div class="product-type">
+									<p>Tenor Duration</p>
+									<select name="" id="">
+										<option value="select one">Select One</option>
+										<option value="select two">Select Two</option>
+										<option value="select three">Select Three</option>
+									</select>
+								</div>
+								<div class="product-type">
+									<p>Proposed Tenor</p>
+									<input type="text" placeholder="Enter a value" required id="tenor">
+								</div>
+
+							</div>
+
+							
+							
+						</div>
+
+						
+
+
+						<div class="pop-up-btn">
+							<button class="pop-cancel remove-pop" type="button">Cancel</button>
+
+
+							<div id="upload">
+
+								<input type="file" id="file-upload"  required />
+								  <label for="file-upload">
+									<!-- <span>
+										<i class="uil uil-plus"></i>
+									</span> -->
+									Attach Files
+								</label>
+	
+							</div>
+
+							<!-- <button class="pop-attach" type="button">Al</button> -->
+						</div>
+					</div>
+
 					<div class="acc__btns">
 						<button class="prev" type="button">Back</button>
 						<button class="next" type="button">Next</button>
@@ -266,7 +378,7 @@
 										<i class="uil uil-plus"></i>
 									</span>
 									Add a Financial Statement
-								</label>
+								
 								</button>
 	
 								<!-- <input type="file" id="file-upload"  required />
@@ -280,7 +392,7 @@
 
 					</div>
 
-
+					<!--========== Financial Statement Modal ============-->
 					<div class="modal pop-up hidden">
 						<div class="pop-up-header">
 							<h6>Add a Financial Statement</h6>
@@ -364,6 +476,22 @@
 
 						<div id="upload">
 
+							<button type="button" class="open-modal">
+								<span>
+									<i class="uil uil-plus"></i>
+								</span>
+								New Collateral
+							</button>
+
+							<!-- <input type="file" id="file-upload"  required />
+							  <label for="file-upload">
+								
+							<div id="file-upload-filename"></div> -->
+
+						</div>
+
+						<!-- <div id="upload">
+
 							<input type="file" id="file-upload"  required />
 							  <label for="file-upload">
 								<span>
@@ -373,17 +501,26 @@
 							</label>
 							<div id="file-upload-filename"></div>
 
-						</div>
+						</div> -->
 
 					</div>
 
 					<!--========  Collateral Modal ===========-->
-					<div class="modal pop-up hidden">
+					<div class="modal pop-up ">
 						<div class="pop-up-header">
-							<h6>Add a Financial Statement</h6>
+							<h6>Add a Collateral Statement</h6>
 							<span class="remove-pop">
 								<i class="uil uil-multiply"></i>
 							</span>
+						</div>
+
+						<div class="col-select">
+							<p>Select Proposed Collateral Type</p>
+							<select name="" id="">
+								<option value="select one">Select One</option>
+								<option value="select two">Select Two</option>
+								<option value="select three">Select Three</option>
+							</select>
 						</div>
 
 						<div id="drag-drop">
